@@ -1,30 +1,40 @@
-async function askAI(){
+function toggleChat(){
 
-let question=document.getElementById("question").value
+let chat=document.getElementById("chat")
 
-let response=await fetch("https://api.openai.com/v1/chat/completions",{
+if(chat.style.display==="flex"){
+chat.style.display="none"
+}else{
+chat.style.display="flex"
+}
 
-method:"POST",
+}
 
-headers:{
-"Content-Type":"application/json",
-"Authorization":"Bearer YOUR_API_KEY"
-},
+function sendMessage(){
 
-body:JSON.stringify({
+let input=document.getElementById("chatInput")
+let text=input.value
 
-model:"gpt-4o-mini",
+if(text==="") return
 
-messages:[
-{role:"user",content:question}
-]
+let messages=document.getElementById("messages")
 
-})
+messages.innerHTML+=`<div class="user-msg">${text}</div>`
 
-})
+/* mock AI reply */
 
-let data=await response.json()
+let reply="You can compare WAAP platforms on our compare page."
 
-document.getElementById("response").innerText=data.choices[0].message.content
+if(text.toLowerCase().includes("best"))
+reply="Akamai is one of the strongest WAAP platforms for enterprise security."
+
+if(text.toLowerCase().includes("startup"))
+reply="BytePlus or Cloudflare can be good for startups."
+
+messages.innerHTML+=`<div class="ai-msg">${reply}</div>`
+
+input.value=""
+
+messages.scrollTop=messages.scrollHeight
 
 }
