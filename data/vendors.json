@@ -1,0 +1,36 @@
+{
+ "vendors":[
+  {
+   "name":"Akamai",
+   "waf":"✓",
+   "bot":"✓",
+   "ddos":"✓",
+   "api":"✓",
+   "edge":"Global"
+  },
+  {
+   "name":"Cloudflare",
+   "waf":"✓",
+   "bot":"✓",
+   "ddos":"✓",
+   "api":"✓",
+   "edge":"Global"
+  },
+  {
+   "name":"Imperva",
+   "waf":"✓",
+   "bot":"✓",
+   "ddos":"✓",
+   "api":"✓",
+   "edge":"Limited"
+  },
+  {
+   "name":"BytePlus",
+   "waf":"✓",
+   "bot":"-",
+   "ddos":"✓",
+   "api":"-",
+   "edge":"Regional"
+  }
+ ]
+}
