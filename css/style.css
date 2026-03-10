@@ -150,3 +150,72 @@ padding:40px;
 color:#6b7280;
 font-size:14px;
 }
+
+
+/* WAAP comparison table */
+
+.table-wrapper{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+font-size:15px;
+}
+
+th{
+text-align:center;
+padding:16px;
+border-bottom:2px solid #e5e7eb;
+background:#f8fafc;
+}
+
+td{
+padding:14px;
+border-bottom:1px solid #eee;
+text-align:center;
+}
+
+td:first-child{
+text-align:left;
+font-weight:500;
+}
+
+tr:hover{
+background:#fafafa;
+}
+
+/* highlight Akamai */
+
+.akamai{
+background:#eef6ff;
+font-weight:600;
+}
+
+/* badges */
+
+.badge{
+font-size:11px;
+padding:4px 8px;
+border-radius:12px;
+margin-left:6px;
+font-weight:600;
+}
+
+.badge-best{
+background:#2563eb;
+color:white;
+}
+
+.badge-mid{
+background:#64748b;
+color:white;
+}
+
+.badge-value{
+background:#10b981;
+color:white;
+}
