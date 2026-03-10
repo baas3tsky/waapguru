@@ -17,27 +17,64 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
+padding:18px 60px;
+border-bottom:1px solid #eee;
 background:white;
-border-bottom:1px solid #e5e7eb;
 }
 
-nav .logo{
+.logo{
 font-weight:700;
+color:#2563eb;
 font-size:20px;
 }
 
-.menu a{
-margin-left:30px;
-text-decoration:none;
-color:#374151;
-font-weight:500;
-font-size:15px;
-transition:0.2s;
+.menu{
+display:flex;
+align-items:center;
+gap:28px;
 }
 
-.menu a:hover{
-color:#2563eb;
+/* compare / knowledge */
+
+.nav-main{
+text-decoration:none;
+font-size:16px;
+font-weight:600;
+color:#111;
+position:relative;
+padding-bottom:4px;
+}
+
+/* underline animation */
+
+.nav-main::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0%;
+height:2px;
+background:#2563eb;
+transition:0.25s;
+}
+
+.nav-main:hover::after{
+width:100%;
+}
+
+/* AI button */
+
+.ai-btn{
+background:#2563eb;
+color:white;
+padding:9px 16px;
+border-radius:6px;
+font-weight:600;
+text-decoration:none;
+}
+
+.ai-btn:hover{
+background:#1e4fd1;
 }
 
 /* CTA button */
