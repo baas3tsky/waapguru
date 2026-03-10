@@ -33,6 +33,86 @@ display:flex;
 gap:14px;
 }
 
+.positioning{
+padding:80px 20px;
+text-align:center;
+}
+
+.positioning h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.sub{
+color:#666;
+margin-bottom:40px;
+}
+
+.chart{
+position:relative;
+width:700px;
+height:400px;
+margin:auto;
+border-left:2px solid #ccc;
+border-bottom:2px solid #ccc;
+}
+
+/* vendor points */
+
+.vendor{
+position:absolute;
+background:#2563eb;
+color:white;
+padding:6px 10px;
+border-radius:6px;
+font-size:13px;
+}
+
+/* positions */
+
+.akamai{
+top:40px;
+left:350px;
+}
+
+.imperva{
+top:80px;
+left:500px;
+}
+
+.cloudflare{
+top:170px;
+left:420px;
+}
+
+.fastly{
+top:230px;
+left:550px;
+}
+
+.byteplus{
+top:300px;
+left:250px;
+}
+
+/* axis labels */
+
+.axis-y{
+position:absolute;
+left:-60px;
+top:-10px;
+font-size:12px;
+color:#666;
+}
+
+.axis-x{
+position:absolute;
+bottom:-30px;
+right:0;
+font-size:12px;
+color:#666;
+}
+
 /* navigation buttons */
 
 .nav-btn{
