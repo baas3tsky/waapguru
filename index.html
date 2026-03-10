@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="th">
 <head>
+
 <meta charset="UTF-8">
-<title>WAAPGuru</title>
+<title>WAAPGuru | เรียนรู้ Web Application Security</title>
+
 <link rel="stylesheet" href="css/style.css">
 
 <style>
@@ -13,9 +14,10 @@ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
 margin:0;
 background:#ffffff;
 color:#111;
+line-height:1.7;
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
 display:flex;
@@ -23,11 +25,13 @@ justify-content:space-between;
 align-items:center;
 padding:18px 60px;
 border-bottom:1px solid #eee;
+background:white;
 }
 
 .logo{
 font-weight:700;
 font-size:20px;
+color:#2563eb;
 }
 
 .menu a{
@@ -53,33 +57,29 @@ margin-bottom:20px;
 
 .hero p{
 font-size:18px;
-color:#666;
+color:#555;
 margin-bottom:40px;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
 }
 
 .btn{
 background:#2563eb;
 color:white;
-padding:14px 28px;
+padding:14px 26px;
 border-radius:8px;
 text-decoration:none;
+margin-right:10px;
 }
 
-.btn.secondary{
-background:#f3f4f6;
-color:#111;
-}
-
-/* SECTION */
+/* SECTIONS */
 
 section{
 padding:80px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
 }
 
 /* CARDS */
@@ -94,30 +94,41 @@ margin:auto;
 
 .card{
 border:1px solid #eee;
-padding:28px;
-border-radius:10px;
+padding:30px;
+border-radius:12px;
 background:white;
+transition:.2s;
 }
 
-.card.highlight{
+.card:hover{
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.highlight{
 border:2px solid #2563eb;
 }
 
-/* TABLE PREVIEW */
+/* INFO */
 
-.compare{
+.info{
 max-width:900px;
 margin:auto;
+font-size:18px;
+color:#444;
 }
+
+/* TABLE */
 
 table{
 width:100%;
+max-width:900px;
+margin:auto;
 border-collapse:collapse;
 }
 
 th,td{
-border:1px solid #eee;
 padding:12px;
+border:1px solid #eee;
 text-align:center;
 }
 
@@ -128,23 +139,16 @@ background:#f7f7f7;
 /* CTA */
 
 .cta{
+background:#f9fafb;
 text-align:center;
-background:#fafafa;
 border-top:1px solid #eee;
 border-bottom:1px solid #eee;
 }
-
-.cta h2{
-margin-bottom:20px;
-}
-
-/* FOOTER */
 
 footer{
 text-align:center;
 padding:40px;
 color:#777;
-font-size:14px;
 }
 
 </style>
@@ -152,8 +156,6 @@ font-size:14px;
 </head>
 
 <body>
-
-<!-- NAVBAR -->
 
 <nav>
 
@@ -168,70 +170,125 @@ font-size:14px;
 
 </nav>
 
+
 <!-- HERO -->
 
 <section class="hero">
 
-<h1>Understand Modern WAAP Security</h1>
+<h1>เรียนรู้ WAAP Security สำหรับ Web Application ยุคใหม่</h1>
 
 <p>
-Community driven knowledge hub for Web Application and API Protection.
-Compare global WAAP platforms and learn modern application security architecture.
+WAAPGuru เป็นเว็บไซต์สำหรับเรียนรู้เกี่ยวกับ Web Application Security,
+การป้องกัน API และการเปรียบเทียบแพลตฟอร์ม WAAP จากผู้ให้บริการชั้นนำ
 </p>
 
-<div class="hero-buttons">
-<a class="btn" href="compare.html">Compare Vendors</a>
-<a class="btn secondary" href="vendors.html">Explore Platforms</a>
+<a class="btn" href="compare.html">เปรียบเทียบ WAAP</a>
+<a class="btn" href="knowledge.html">เริ่มเรียนรู้</a>
+
+</section>
+
+
+<!-- WHAT IS WAAP -->
+
+<section>
+
+<h2 class="section-title">WAAP คืออะไร</h2>
+
+<div class="info">
+
+<p>
+WAAP (Web Application and API Protection) คือแนวคิดด้านความปลอดภัยสำหรับการป้องกัน Web Application และ API จากการโจมตีทางไซเบอร์
+เช่น SQL Injection, Cross-site scripting (XSS), Bot Attack และ DDoS
+</p>
+
+<p>
+เดิมทีองค์กรจะใช้เพียง Web Application Firewall (WAF) แต่ในปัจจุบัน WAAP ได้รวมความสามารถหลายด้านเข้าด้วยกัน
+เช่น Bot Management, API Security และ DDoS Protection เพื่อป้องกันแอปพลิเคชันอย่างครบวงจร
+</p>
+
 </div>
 
 </section>
 
-<!-- VENDOR CARDS -->
+
+<!-- CAPABILITIES -->
 
 <section>
 
-<h2 style="text-align:center;margin-bottom:40px;">Leading WAAP Platforms</h2>
+<h2 class="section-title">ความสามารถหลักของ WAAP Platform</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Application Firewall</h3>
+<p>ป้องกันการโจมตีตาม OWASP Top 10 เช่น SQL Injection และ XSS</p>
+</div>
+
+<div class="card">
+<h3>Bot Management</h3>
+<p>ตรวจจับและป้องกัน Bot ที่ใช้ในการ scraping หรือ credential stuffing</p>
+</div>
+
+<div class="card">
+<h3>API Security</h3>
+<p>ป้องกันการโจมตีที่เกิดกับ API เช่น abuse และ automated attack</p>
+</div>
+
+<div class="card">
+<h3>DDoS Protection</h3>
+<p>ป้องกันการโจมตีแบบ Distributed Denial of Service ที่ทำให้ระบบล่ม</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VENDORS -->
+
+<section>
+
+<h2 class="section-title">แพลตฟอร์ม WAAP ที่ได้รับความนิยม</h2>
 
 <div class="cards">
 
 <div class="card highlight">
 <h3>Akamai</h3>
-<p>Global edge WAAP platform with industry leading performance, bot protection and enterprise security.</p>
+<p>Edge security platform ที่มี network ขนาดใหญ่และความสามารถด้าน Bot Protection ที่แข็งแกร่ง</p>
 </div>
 
 <div class="card">
 <h3>Cloudflare</h3>
-<p>Integrated edge platform combining CDN, WAF and application security.</p>
+<p>แพลตฟอร์มที่รวม CDN และ Security ไว้ในระบบเดียว</p>
 </div>
 
 <div class="card">
 <h3>Imperva</h3>
-<p>Enterprise application security platform with strong protection capabilities.</p>
+<p>เน้นความปลอดภัยระดับ enterprise สำหรับองค์กรขนาดใหญ่</p>
 </div>
 
 <div class="card">
 <h3>BytePlus</h3>
-<p>Cost effective cloud WAF solution with essential application protection.</p>
+<p>โซลูชัน WAF ที่มีราคาคุ้มค่าและเหมาะกับระบบ cloud native</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- COMPARISON PREVIEW -->
+
+<!-- COMPARE -->
 
 <section>
 
-<h2 style="text-align:center;margin-bottom:40px;">WAAP Vendor Comparison</h2>
-
-<div class="compare">
+<h2 class="section-title">ตัวอย่างการเปรียบเทียบ WAAP</h2>
 
 <table>
 
 <tr>
 <th>Vendor</th>
 <th>WAF</th>
-<th>Bot Protection</th>
+<th>Bot</th>
 <th>DDoS</th>
 <th>API Security</th>
 </tr>
@@ -270,25 +327,28 @@ Compare global WAAP platforms and learn modern application security architecture
 
 </table>
 
-</div>
-
 </section>
 
-<!-- AI CTA -->
+
+<!-- AI -->
 
 <section class="cta">
 
-<h2>Not sure which WAAP platform fits your architecture?</h2>
+<h2>ไม่แน่ใจว่าควรใช้ WAAP ตัวไหน?</h2>
 
-<a class="btn" href="ai-advisor.html">Ask WAAP AI Advisor</a>
+<p>
+ลองใช้ AI Advisor เพื่อช่วยวิเคราะห์ requirement ของคุณ
+และแนะนำ vendor ที่เหมาะสม
+</p>
+
+<a class="btn" href="ai-advisor.html">ถาม AI Advisor</a>
 
 </section>
 
-<!-- FOOTER -->
 
 <footer>
 
-WAAPGuru Community
+WAAPGuru — แหล่งเรียนรู้ Web Application Security
 
 </footer>
 
