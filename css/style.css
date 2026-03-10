@@ -219,3 +219,14 @@ color:white;
 background:#10b981;
 color:white;
 }
+
+.gartner-section{
+padding:40px 20px;
+background:#fafafa;
+}
+
+.gartner-wrapper{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
