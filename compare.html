@@ -1,196 +1,40 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>WAAP Vendor Comparison | WAAPGuru</title>
-
-<style>
-
-body{
-font-family: Arial, sans-serif;
-background:#0b0f19;
-color:white;
-margin:0;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-padding:20px 60px;
-background:#111827;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-right:20px;
-}
-
-.logo{
-font-weight:bold;
-font-size:20px;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:60px 20px;
-}
-
-h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.subtitle{
-color:#9ca3af;
-margin-bottom:40px;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-background:#111827;
-border-radius:10px;
-overflow:hidden;
-}
-
-th, td{
-padding:16px;
-text-align:center;
-border-bottom:1px solid #1f2937;
-}
-
-th{
-background:#1f2937;
-}
-
-.feature{
-text-align:left;
-font-weight:bold;
-}
-
-.best{
-background:#1f2937;
-}
-
-.check{
-color:#22c55e;
-font-weight:bold;
-}
-
-.partial{
-color:#facc15;
-}
-
-.no{
-color:#ef4444;
-}
-
-.highlight{
-color:#38bdf8;
-font-weight:bold;
-}
-
-</style>
+<title>Compare WAAP Vendors</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/compare.js" defer></script>
 </head>
 
 <body>
 
 <nav>
-<div class="logo">WAAPGuru</div>
-<div>
 <a href="index.html">Home</a>
 <a href="compare.html">Compare</a>
-<a href="vendors.html">Vendors</a>
 <a href="knowledge.html">Knowledge</a>
-</div>
+<a href="vendors.html">Vendors</a>
+<a href="ai-advisor.html">AI Advisor</a>
 </nav>
 
-<div class="container">
+<section>
 
 <h1>WAAP Vendor Comparison</h1>
-<p class="subtitle">
-เปรียบเทียบความสามารถของผู้ให้บริการ Web Application & API Protection
-</p>
 
-<table>
+<table id="compareTable">
 
 <tr>
-<th class="feature">Feature</th>
-<th>Akamai</th>
-<th>BytePlus</th>
-<th>Cloudflare</th>
-<th>Imperva</th>
-</tr>
-
-<tr>
-<td class="feature">Global Edge Network</td>
-<td class="check highlight">✓ Best</td>
-<td class="partial">✓</td>
-<td class="check">✓</td>
-<td class="partial">✓</td>
-</tr>
-
-<tr>
-<td class="feature">Web Application Firewall</td>
-<td class="check">✓ Advanced</td>
-<td class="check">✓</td>
-<td class="check">✓</td>
-<td class="check">✓</td>
-</tr>
-
-<tr>
-<td class="feature">Bot Management</td>
-<td class="check highlight">✓ Industry Leading</td>
-<td class="partial">✓</td>
-<td class="check">✓</td>
-<td class="check">✓</td>
-</tr>
-
-<tr>
-<td class="feature">API Security</td>
-<td class="check">✓</td>
-<td class="check">✓</td>
-<td class="partial">✓</td>
-<td class="check">✓</td>
-</tr>
-
-<tr>
-<td class="feature">DDoS Protection</td>
-<td class="check highlight">✓ Global</td>
-<td class="partial">✓</td>
-<td class="check">✓</td>
-<td class="check">✓</td>
-</tr>
-
-<tr>
-<td class="feature">Edge Performance</td>
-<td class="check highlight">✓ Best Performance</td>
-<td class="partial">✓</td>
-<td class="check">✓</td>
-<td class="partial">✓</td>
-</tr>
-
-<tr>
-<td class="feature">Ease of Deployment</td>
-<td class="check">✓</td>
-<td class="check highlight">✓ Simple</td>
-<td class="check">✓</td>
-<td class="partial">✓</td>
-</tr>
-
-<tr>
-<td class="feature">Security Coverage</td>
-<td class="check highlight">✓ Full WAAP</td>
-<td class="check">✓ Strong WAF</td>
-<td class="check">✓</td>
-<td class="check">✓</td>
+<th>Vendor</th>
+<th>WAF</th>
+<th>Bot Protection</th>
+<th>DDoS</th>
+<th>API Security</th>
+<th>Global Edge</th>
 </tr>
 
 </table>
 
-</div>
+</section>
 
 </body>
 </html>
