@@ -30,19 +30,42 @@ font-size:20px;
 
 .menu{
 display:flex;
-align-items:center;
-gap:28px;
+gap:14px;
 }
 
-/* compare / knowledge */
+/* navigation buttons */
 
-.nav-main{
+.nav-btn{
 text-decoration:none;
-font-size:16px;
 font-weight:600;
-color:#111;
-position:relative;
-padding-bottom:4px;
+font-size:14px;
+padding:8px 16px;
+border:1px solid #d1d5db;
+border-radius:6px;
+color:#333;
+background:white;
+transition:0.2s;
+}
+
+/* hover */
+
+.nav-btn:hover{
+background:#f1f5f9;
+border-color:#2563eb;
+color:#2563eb;
+}
+
+/* AI highlight */
+
+.ai-btn{
+background:#2563eb;
+border-color:#2563eb;
+color:white;
+}
+
+.ai-btn:hover{
+background:#1e4fd1;
+color:white;
 }
 
 /* underline animation */
