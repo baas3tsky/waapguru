@@ -27,17 +27,32 @@ font-weight:700;
 font-size:20px;
 }
 
-nav .menu a{
-margin-left:25px;
+.menu a{
+margin-left:30px;
 text-decoration:none;
 color:#374151;
 font-weight:500;
+font-size:15px;
+transition:0.2s;
 }
 
-nav .menu a:hover{
+.menu a:hover{
 color:#2563eb;
 }
 
+/* CTA button */
+
+.menu-cta{
+background:#2563eb;
+color:white !important;
+padding:8px 16px;
+border-radius:6px;
+font-weight:600;
+}
+
+.menu-cta:hover{
+background:#1d4ed8;
+}
 /* HERO */
 
 .hero{
