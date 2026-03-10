@@ -1,81 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>WAAPGuru</title>
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+margin:0;
+background:#ffffff;
+color:#111;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+border-bottom:1px solid #eee;
+}
+
+.logo{
+font-weight:700;
+font-size:20px;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.hero h1{
+font-size:46px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#666;
+margin-bottom:40px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.btn{
+background:#2563eb;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+}
+
+.btn.secondary{
+background:#f3f4f6;
+color:#111;
+}
+
+/* SECTION */
+
+section{
+padding:80px 20px;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+border:1px solid #eee;
+padding:28px;
+border-radius:10px;
+background:white;
+}
+
+.card.highlight{
+border:2px solid #2563eb;
+}
+
+/* TABLE PREVIEW */
+
+.compare{
+max-width:900px;
+margin:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid #eee;
+padding:12px;
+text-align:center;
+}
+
+th{
+background:#f7f7f7;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+background:#fafafa;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+font-size:14px;
+}
+
+</style>
+
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
+
 <div class="logo">WAAPGuru</div>
 
 <div class="menu">
-<a href="index.html">Home</a>
 <a href="compare.html">Compare</a>
 <a href="knowledge.html">Knowledge</a>
 <a href="vendors.html">Vendors</a>
 <a href="ai-advisor.html">AI Advisor</a>
-<a href="community.html">Community</a>
 </div>
+
 </nav>
+
+<!-- HERO -->
 
 <section class="hero">
 
-<h1>Modern WAAP Security</h1>
+<h1>Understand Modern WAAP Security</h1>
 
 <p>
-Community-driven knowledge hub for Web Application and API Protection.
-Compare global WAAP vendors and explore modern security architecture.
+Community driven knowledge hub for Web Application and API Protection.
+Compare global WAAP platforms and learn modern application security architecture.
 </p>
 
 <div class="hero-buttons">
-<a href="compare.html" class="btn">Compare Vendors</a>
-<a href="vendors.html" class="btn secondary">Explore Platforms</a>
+<a class="btn" href="compare.html">Compare Vendors</a>
+<a class="btn secondary" href="vendors.html">Explore Platforms</a>
 </div>
 
 </section>
 
-<section class="vendors">
+<!-- VENDOR CARDS -->
 
-<h2>Leading WAAP Platforms</h2>
+<section>
 
-<div class="card-grid">
+<h2 style="text-align:center;margin-bottom:40px;">Leading WAAP Platforms</h2>
+
+<div class="cards">
 
 <div class="card highlight">
 <h3>Akamai</h3>
-<p>Global edge WAAP platform with industry leading performance and bot protection.</p>
+<p>Global edge WAAP platform with industry leading performance, bot protection and enterprise security.</p>
 </div>
 
 <div class="card">
-<h3>BytePlus</h3>
-<p>Cost effective WAF and application security platform.</p>
+<h3>Cloudflare</h3>
+<p>Integrated edge platform combining CDN, WAF and application security.</p>
 </div>
 
 <div class="card">
 <h3>Imperva</h3>
-<p>Enterprise security with strong application and data protection.</p>
+<p>Enterprise application security platform with strong protection capabilities.</p>
+</div>
+
+<div class="card">
+<h3>BytePlus</h3>
+<p>Cost effective cloud WAF solution with essential application protection.</p>
 </div>
 
 </div>
 
 </section>
+
+<!-- COMPARISON PREVIEW -->
+
+<section>
+
+<h2 style="text-align:center;margin-bottom:40px;">WAAP Vendor Comparison</h2>
+
+<div class="compare">
+
+<table>
+
+<tr>
+<th>Vendor</th>
+<th>WAF</th>
+<th>Bot Protection</th>
+<th>DDoS</th>
+<th>API Security</th>
+</tr>
+
+<tr>
+<td>Akamai</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+
+<tr>
+<td>Cloudflare</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+
+<tr>
+<td>Imperva</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+
+<tr>
+<td>BytePlus</td>
+<td>✓</td>
+<td>-</td>
+<td>✓</td>
+<td>-</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- AI CTA -->
 
 <section class="cta">
 
 <h2>Not sure which WAAP platform fits your architecture?</h2>
 
-<a href="ai-advisor.html" class="btn">Ask WAAP AI Advisor</a>
+<a class="btn" href="ai-advisor.html">Ask WAAP AI Advisor</a>
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
 
-<p>WAAPGuru Community</p>
+WAAPGuru Community
 
 </footer>
 
 </body>
-
 </html>
