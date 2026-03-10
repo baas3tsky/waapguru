@@ -1,68 +1,152 @@
-body{
-font-family:Arial;
+*{
 margin:0;
-background:#f8fafc;
-color:#333;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
 }
+
+body{
+background:#f8fafc;
+color:#111;
+line-height:1.6;
+}
+
+/* NAVBAR */
 
 nav{
 display:flex;
-gap:20px;
-padding:20px;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
 background:white;
-border-bottom:1px solid #eee;
+border-bottom:1px solid #e5e7eb;
 }
+
+nav .logo{
+font-weight:700;
+font-size:20px;
+}
+
+nav .menu a{
+margin-left:25px;
+text-decoration:none;
+color:#374151;
+font-weight:500;
+}
+
+nav .menu a:hover{
+color:#2563eb;
+}
+
+/* HERO */
 
 .hero{
 text-align:center;
-padding:100px 20px;
+padding:120px 20px;
+max-width:900px;
+margin:auto;
 }
 
 .hero h1{
-font-size:42px;
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#6b7280;
+margin-bottom:40px;
 }
 
 .hero-buttons{
-margin-top:20px;
+display:flex;
+justify-content:center;
+gap:20px;
 }
 
 .btn{
 background:#2563eb;
 color:white;
-padding:12px 20px;
+padding:14px 28px;
+border-radius:8px;
 text-decoration:none;
-border-radius:6px;
+font-weight:600;
 }
 
 .btn.secondary{
-background:#555;
+background:#e5e7eb;
+color:#111;
 }
+
+/* SECTION */
+
+section{
+padding:80px 20px;
+}
+
+/* CARDS */
 
 .card-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:40px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:8px;
-border:1px solid #eee;
+padding:30px;
+border-radius:12px;
+border:1px solid #e5e7eb;
+transition:all .2s;
 }
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* AKAMAI highlight */
 
 .highlight{
 border:2px solid #2563eb;
 }
 
+/* TABLE */
+
 table{
 width:100%;
+max-width:1000px;
+margin:auto;
 border-collapse:collapse;
+background:white;
 }
 
 th,td{
-border:1px solid #ddd;
-padding:10px;
+padding:14px;
+border:1px solid #e5e7eb;
 text-align:center;
+}
+
+th{
+background:#f3f4f6;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+background:white;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+color:#6b7280;
+font-size:14px;
 }
