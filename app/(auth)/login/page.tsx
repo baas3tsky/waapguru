@@ -25,8 +25,8 @@ const LoginPage = async ({
           <div className="flex items-center gap-3 mb-8">
             <div className="relative h-12 w-12">
               <Image 
-                src="/logo_ruth-removebg-preview.png" 
-                alt="Ruthvictor Logo" 
+                src="/3tsky_logo.avif" 
+                alt="3TSKY Logo" 
                 fill
                 className="object-contain"
                 priority
