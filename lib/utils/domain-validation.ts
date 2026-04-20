@@ -3,7 +3,7 @@
  * ตรวจสอบว่า email เป็นของ domain ที่อนุญาตหรือไม่
  */
 
-const ALLOWED_DOMAIN = 'ruthvictor.com';
+const ALLOWED_DOMAIN = '3tsky.com';
 
 /**
  * ตรวจสอบว่า email อยู่ใน whitelist domain หรือไม่
