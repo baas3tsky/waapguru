@@ -73,7 +73,7 @@ const LoginPage = async ({
         </div>
 
         <div className="relative z-10 mt-12 text-sm text-slate-500">
-          © {new Date().getFullYear()} Ruthvictor. All rights reserved.
+          © {new Date().getFullYear()} 3TSKY. All rights reserved.
         </div>
       </div>
 
