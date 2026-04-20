@@ -25,7 +25,7 @@ export function LoginForm({ message }: { message?: string }) {
     
     // Construct full email from username
     const username = formData.get("username") as string;
-    const fullEmail = `${username}@ruthvictor.com`;
+    const fullEmail = `${username}@3tsky.com`;
     
     // Create new FormData with full email
     const newFormData = new FormData();
@@ -102,7 +102,7 @@ export function LoginForm({ message }: { message?: string }) {
                       disabled={isLoading}
                       className="flex-1 text-right"
                     />
-                    <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">@ruthvictor.com</span>
+                    <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">@3tsky.com</span>
                   </div>
                 </div>
 
@@ -111,7 +111,7 @@ export function LoginForm({ message }: { message?: string }) {
                 </Button>
 
                 <div className="text-center text-sm text-muted-foreground">
-                  Only @ruthvictor.com emails are allowed
+                  Only @3tsky.com emails are allowed
                 </div>
               </div>
             </form>
