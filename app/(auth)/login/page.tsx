@@ -23,7 +23,7 @@ const LoginPage = async ({
 
         <div className="relative z-10">
           <div className="flex items-center gap-3 mb-8">
-            <div className="relative h-12 w-12">
+            <div className="relative h-15 w-15">
               <Image 
                 src="/3tsky_logo.avif" 
                 alt="3TSKY Logo" 
@@ -32,7 +32,7 @@ const LoginPage = async ({
                 priority
               />
             </div>
-            <span className="text-2xl font-bold tracking-tight">Ruthvictor</span>
+            <span className="text-2xl font-bold tracking-tight">3TSKY</span>
           </div>
 
           <h1 className="text-3xl lg:text-4xl font-bold leading-tight mb-6">
